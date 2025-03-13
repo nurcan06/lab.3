@@ -1,0 +1,11 @@
+import math
+e=0.01
+x=0.1
+t=1 #(baslangic deyer)
+S=t  #(cem)
+n=1  #(indeks)
+while abs(t)>e:       #(hesablanan hedd 0.01 den kicik olmuyana qeder davam edir)
+        t=(x**n)/math.factorial(n)    #(yeni hedd hesablayir)
+        S+=t  #(yeni hesablanan hedd ceme elave edilir)
+        n+=1 #(faktorialinin derecesi artirilirki,dovr davam etsin)
+print(S)
